@@ -14,19 +14,19 @@ NOTE: This full pipeline may take a considerable amount of time to run, especial
 ----------------------------------------------------------------------------------------------------
 CONTENTS:
 
-SUBMISSION_Forcasting_Ice.ipynb  
+Forcasting_Ice.ipynb  
    - Generates daily forecasted Arctic ice concentration rasters for 2025–2050 based on historical data and a linear decay model.
 
-SUBMISSION_Merging_Forcasted_Ice_with_N_Hemisphere.ipynb  
+Merging_Forcasted_Ice_with_N_Hemisphere.ipynb  
    - Merges the forecasted ice data with a northern hemisphere base map, filling in gaps and standardizing to a common projection (EPSG:3411).  
    - Prepares a consistent raster dataset for downstream navigability analysis.
    
-SUBMISSION_Getting_passable_days.ipynb  
+Getting_passable_days.ipynb  
    - Uses the A* algorithm to compute shortest maritime routes between four port pairs: Shanghai ↔ New York, Shanghai ↔ Rotterdam, Singapore ↔ New York, Singapore ↔ Rotterdam.  
    - Determines the number of “Arctic-navigable” days each year (2025–2050) for each risk threshold, considering dynamic ice conditions and route distance thresholds.  
    - Outputs a CSV file of navigable days per year for further analysis.
 
-SUBMISSION_Final_Graphs.ipynb  
+Final_Graphs.ipynb  
    - Reads the compiled navigable days data (one CSV per threshold).  
    - Produces visualizations:  
      - Annual navigable days by threshold  
